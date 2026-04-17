@@ -1349,6 +1349,124 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CONTACT US & LOCATION */}
+      <section id="contact" className="py-20 px-4 bg-white scroll-mt-28">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-center">Contact us & location</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Visit us at our campus in Nasriganj, Rohtas, Bihar. We're here to help with all your enquiries about admissions and school programs.
+          </p>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 shadow-lg">
+                <h3 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+                  <span className="text-3xl">📍</span>
+                  Visit our campus
+                </h3>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center shrink-0 mt-1">
+                      <span className="text-blue-600 text-sm">📍</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Address</p>
+                      <p className="text-gray-600">Sonevalley International School<br />Nasriganj, Rohtas, Bihar</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center shrink-0 mt-1">
+                      <span className="text-green-600 text-sm">📞</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Phone</p>
+                      <p className="text-gray-600">+91-8863046790</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center shrink-0 mt-1">
+                      <span className="text-green-600 text-sm">💬</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">WhatsApp</p>
+                      <a href="https://wa.me/918863046790" className="text-green-600 hover:text-green-700 font-medium">
+                        +91-8863046790
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center shrink-0 mt-1">
+                      <span className="text-purple-600 text-sm">⏰</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Office Hours</p>
+                      <p className="text-gray-600">Monday - Saturday: 8:00 AM - 4:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-blue-100">
+                  <button
+                    type="button"
+                    onClick={() => setShowApplicationForm(true)}
+                    className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg"
+                  >
+                    Schedule a campus visit
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Google Maps */}
+            <div className="space-y-6">
+              <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                  <span className="text-3xl">🗺️</span>
+                  Find us on the map
+                </h3>
+                
+                <div className="relative w-full h-96 rounded-xl overflow-hidden border-2 border-gray-200 shadow-md">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019284849576!2d84.11631131542231!3d24.743247384145896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d2f0b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sNasriganj%2C%20Bihar%2C%20India!5e0!3m2!1sen!2sus!4v1642345678901!5m2!1sen!2sus"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Sonevalley International School Location"
+                  ></iframe>
+                </div>
+                
+                <div className="mt-4 flex gap-3">
+                  <a
+                    href="https://share.google/0GxTI5deQ59p8SSzg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-blue-600 text-white text-center py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md"
+                  >
+                    Open in Google Maps
+                  </a>
+                  <a
+                    href="https://share.google/0GxTI5deQ59p8SSzg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-green-600 text-white text-center py-3 px-4 rounded-lg font-semibold hover:bg-green-700 transition shadow-md"
+                  >
+                    Get directions
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
         <div className="max-w-4xl mx-auto text-center space-y-6">
